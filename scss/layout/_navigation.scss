@@ -1,2 +1,59 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  @include mix.tablet {
+    display: none;
+  }
+}
+
+.close__icon {
+  display: none;
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var.$color-menu;
+  list-style: none;
+  padding-top: 4rem;
+  @include mix.tablet {
+    transform: translateY(0);
+    position: relative;
+    display: flex;
+    background: transparent;
+    padding-top: 0;
+  }
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.menu__link {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: var.$spacing-half;
+  @include mix.tablet {
+    color: var.$color-text;
+  }
+}

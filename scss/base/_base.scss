@@ -1,2 +1,33 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+body {
+  background-color: var.$color-background;
+}
+
+.hero,
+.main__section,
+.footer {
+  padding: var.$spacing;
+  @include mix.tablet {
+    padding: var.$spacing-double;
+  }
+  @include mix.desktop {
+    padding: var.$spacing-double var.$spacing-quadruple;
+  }
+}
+
+.hero {
+  background-image: url(/images/background-upper.png);
+  background-size: cover;
+}
+
+.main__section {
+  &--offer {
+    background-color: var.$color-primary-45;
+  }
+  &--contact {
+    background-image: url(/images/background-lower.png);
+    background-size: cover;
+  }
+}

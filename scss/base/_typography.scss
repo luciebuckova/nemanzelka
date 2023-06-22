@@ -1,2 +1,70 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+body {
+  font-size: 87.5%;
+  text-align: center;
+  @include mix.tablet {
+    font-size: 100%;
+    text-align: left;
+  }
+  font-family: var.$font-main;
+  color: var.$color-text;
+  line-height: 1.5;
+}
+
+.title {
+  font-family: var.$font-title;
+  text-align: center;
+  @include mix.tablet {
+    text-align: left;
+  }
+  &--main {
+    font-size: 1.25rem;
+    @include mix.tablet {
+      font-size: 2.625rem;
+    }
+    @include mix.desktop {
+      font-size: 4rem;
+    }
+  }
+  &--submain {
+    font-size: 1rem;
+    @include mix.tablet {
+      font-size: 1.75rem;
+    }
+    @include mix.desktop {
+      font-size: 2rem;
+    }
+  }
+  &--section {
+    font-size: 1.5rem;
+    @include mix.tablet {
+      font-size: 2rem;
+    }
+    @include mix.desktop {
+      font-size: 2.25rem;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: var.$color-contrast;
+      margin: 0 auto;
+      @include mix.tablet {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.link,
+.button__link {
+  text-decoration: none;
+  color: var.$color-text;
+}

@@ -19,118 +19,154 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
     />
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <nav>
-      <img src="/images/logo-big.svg" alt="Logo Hodinová nemanželka" />
-      <img src="/images/logo-small.svg" alt="Logo Hodinová nemanželka" />
-      <ul>
-        <li><a href="#about">O mně</a></li>
-        <li><a href="#offer">Služby</a></li>
-        <li><a href="#price">Ceník</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>Hledáš pomoc s úklidem a jinými domácími záležitostmi?</h1>
-      <p>Jsi na správném místě!</p>
-      <div><a href="#contact">K uklizenému a útulnému domovu tudy →</a></div>
+    <header class="hero">
+      <nav class="navigation">
+        <img
+          class="logo"
+          src="/images/logo.svg"
+          alt="Logo Hodinová nemanželka"
+        />
+        <ul class="menu">
+          <li><a class="menu__link" href="#about">O mně</a></li>
+          <li><a class="menu__link" href="#offer">Služby</a></li>
+          <li><a class="menu__link" href="#price">Ceník</a></li>
+          <li><a class="menu__link" href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fi fi-rr-menu-burger menu__icon"></i>
+          <i class="fi fi-rr-cross close__icon"></i>
+        </div>
+      </nav>
+      <h1 class="title title--main">
+        Hledáš pomoc s úklidem a jinými domácími záležitostmi?
+      </h1>
+      <p class="title title--submain">Jsi na správném místě!</p>
+      <div class="button">
+        <a class="button__link" href="#contact"
+          >K uklizenému a útulnému domovu tudy →</a
+        >
+      </div>
     </header>
-    <main>
-      <div>
-        <h2>O mně</h2>
-        <img src="/images/photo-placeholder.png" alt="Fotografie autorky" />
-        <p>
+    <main class="main">
+      <section class="main__section main__section--about" id="about">
+        <h2 class="title title--section">O mně</h2>
+        <img
+          class="image"
+          src="/images/photo-placeholder.png"
+          alt="Fotografie autorky"
+        />
+        <p class="main__text">
           Vítám Tě na svých stránkách, kde nabízím služby úklidu a výpomoci
           v domácnosti.
         </p>
-        <p>Abys věděl, koho si pouštíš domů, napíšu Ti o sobě pár slov.</p>
-        <p>
+        <p class="main__text">
+          Abys věděl, koho si pouštíš domů, napíšu Ti o sobě pár slov.
+        </p>
+        <p class="main__text">
           Narodila jsem se v roce 1989 v severních Čechách, v malé obci na
           Liberecku. Od mala jsem byla vedena k práci, počínaje skládáním uhlí,
           štípání dřeví, tak také samozřejmě pomoc v domácnosti s úklidem.
         </p>
-        <p>
+        <p class="main__text">
           Vystudovala jsem Západočeskou univerzitu v Plzni, fakultu
           Pedagogickou. Touto cestou jsem se nikdy nevydala a vrhla jsem se na
           dynamičtější povolání ve strojírenství.
         </p>
-        <p>
+        <p class="main__text">
           Protože pracuji zejména v kanceláři, fyzická práce je pro mě relax a
           odpočinek.
         </p>
-        <p>
+        <p class="main__text">
           Proto bych Vám ráda nabídla své služby. Úklid pro mě není práce nebo
           nutnost, úklid je pro mě forma zábavy a leckdy i výzva.
         </p>
-      </div>
-      <div>
-        <h2>Služby</h2>
-        <p>
+      </section>
+      <section class="main__section main__section--offer" id="offer">
+        <h2 class="title title--section">Služby</h2>
+        <p class="main__text">
           Hlavní službou, kterou nabízím je kompletní úklid Vaší domácnosti.
           Není problém se dohodnout na doplňkových službách (např. venčení
           pejska, hlídání dětí, nákup aj.).
         </p>
-        <div>Utírání prachu</div>
-        <div>Vysávání povrchů</div>
-        <div>Vytírání podlah</div>
-        <div>Úklid koupelny</div>
-        <div>Úklid WC</div>
-        <div>Úklid kuchyně</div>
-        <div>Praní prádla</div>
-        <div>Zalévání květin</div>
-        <div>Vynesení odpadků</div>
-        <div>Nákup do domu</div>
-        <div>Venčení pejsků</div>
-        <div>Hlídání dětí</div>
-      </div>
-      <div>
-        <h2>Ceník</h2>
-        <p>
+        <div class="container">
+          <div class="container__item">Utírání prachu</div>
+          <div class="container__item">Vysávání povrchů</div>
+          <div class="container__item">Vytírání podlah</div>
+          <div class="container__item">Úklid koupelny</div>
+          <div class="container__item">Úklid WC</div>
+          <div class="container__item">Úklid kuchyně</div>
+          <div class="container__item">Praní prádla</div>
+          <div class="container__item">Zalévání květin</div>
+          <div class="container__item">Vynesení odpadků</div>
+          <div class="container__item">Nákup do domu</div>
+          <div class="container__item">Venčení pejsků</div>
+          <div class="container__item">Hlídání dětí</div>
+        </div>
+      </section>
+      <section class="main__section main__section--price" id="price">
+        <h2 class="title title--section">Ceník</h2>
+        <p class="main__text">
           Pravidelný úklid: 250,- Kč/hod<br />
           Jednorázový úklid: 350,-Kč/hod<br />
           Ostatní služby: cena dohodou<br />
           Dopravné: 3,-Kč/km
         </p>
-        <p>
+        <p class="main__text">
           Pokud se domluvíme na pravidelném úklidu, je možné si ho předplatit na
           určité období. Platba je možná hotově po výkonu prací nebo platbou
           přes QR kód.
         </p>
-      </div>
-      <div>
-        <h2>Kontakt</h2>
-        <p>
+      </section>
+      <section class="main__section main__section--contact" id="contact">
+        <h2 class="title title--section">Kontakt</h2>
+        <p class="main__text">
           Pokud i Ty chceš mít více času na rodinu, práci nebo svoje koníčky,
           pošli mi poptávku a já se Ti ozvu.
         </p>
-        <form action="">
-          <label for="">Jméno</label>
-          <input type="text" name="" id="" />
-          <label for="">E-mail</label>
-          <input type="email" name="" id="" />
-          <label for="">Telefon</label>
-          <input type="tel" name="" id="" />
-          <label for="">Zpráva</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+        <form class="form" action="" method="post">
+          <div class="form__item">
+            <label class="form__label" for="name">Jméno</label>
+            <input class="form__field" type="text" name="name" id="name" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__field" type="email" name="email" id="email" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="phone">Telefon</label>
+            <input class="form__field" type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="message">Zpráva</label>
+            <textarea
+              class="form__field"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
         </form>
-      </div>
+      </section>
     </main>
-    <footer>
-      <p>
-        <i class="fi fi-rr-user"></i> Mgr. Michaela Bučková<br />
-        <i class="fi fi-rr-home"></i> Dnešice 284, 334 43 Dnešice<br />
+    <footer class="footer">
+      <p class="main__text">
+        <span class="text--bold">Mgr. Michaela Bučková</span><br />
+        Dnešice 284, 334 43 Dnešice<br />
         <i class="fi fi-rr-envelope"></i>
-        <a href="mailto:michaela.buckova@seznam.cz"
+        <a class="link" href="mailto:michaela.buckova@seznam.cz"
           >michaela.buckova@seznam.cz</a
         ><br />
         <i class="fi fi-rr-phone-call"></i> +420 736 108 266<br />
         <i class="fi fi-brands-instagram"></i>
-        <a href="https://www.instagram.com/hodinova_nemanzelka/"
-          >hodinova_nemazelka</a
+        <a class="link" href="https://www.instagram.com/hodinova_nemanzelka/"
+          >hodinova_nemanzelka</a
         >
       </p>
-      <p>&copy;2023 Lucie Bučková</p>
+      <p class="main__text">&copy;2023 Lucie Bučková</p>
     </footer>
   </body>
 </html>
