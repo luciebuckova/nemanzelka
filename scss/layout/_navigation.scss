@@ -39,6 +39,7 @@
     transform: translateY(0);
     position: relative;
     display: flex;
+    gap: var.$spacing;
     background: transparent;
     padding-top: 0;
   }
@@ -49,11 +50,17 @@
 }
 
 .menu__link {
+  font-family: var.$font-title;
   text-decoration: none;
   display: block;
   color: white;
   padding: var.$spacing-half;
   @include mix.tablet {
     color: var.$color-text;
+    padding: 0 var.$spacing-half;
+    border-radius: 8px;
+    &:hover {
+      background-color: var.$color-primary-75;
+    }
   }
 }

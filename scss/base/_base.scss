@@ -10,10 +10,10 @@ body {
 .footer {
   padding: var.$spacing;
   @include mix.tablet {
-    padding: var.$spacing-double;
+    padding: var.$spacing var.$spacing-double;
   }
   @include mix.desktop {
-    padding: var.$spacing-double var.$spacing-quadruple;
+    padding: var.$spacing var.$spacing-quadruple;
   }
 }
 
@@ -30,4 +30,8 @@ body {
     background-image: url(/images/background-lower.png);
     background-size: cover;
   }
+}
+
+.image {
+  max-width: 100%;
 }

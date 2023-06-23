@@ -1,2 +1,17 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.button {
+  display: inline-block;
+  background-color: var.$color-primary-75;
+  border-radius: 8px;
+  box-shadow: 7px 7px 10px 0px rgba(26, 28, 23, 0.1);
+  padding: (var.$spacing-half / 2) var.$spacing-half;
+  margin-top: var.$spacing;
+  @include mix.tablet {
+    margin-top: var.$spacing-double;
+  }
+  &:hover {
+    background-color: var.$color-primary-95;
+  }
+}
