@@ -72,4 +72,11 @@ body {
 .button__link {
   text-decoration: none;
   color: var.$color-text;
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.main__text:not(:last-child) {
+  margin-bottom: var.$spacing-half;
 }

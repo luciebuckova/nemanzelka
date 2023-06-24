@@ -1,2 +1,45 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: var.$spacing-half;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var.$spacing;
+  @include mix.tablet {
+    align-items: start;
+  }
+}
+
+.form__field {
+  border: 0;
+  width: 15rem;
+  min-height: 2rem;
+  box-shadow: 7px 7px 10px 0px rgba(26, 28, 23, 0.1);
+  border-radius: 4px;
+  @include mix.tablet {
+    width: 22rem;
+  }
+  &:focus {
+    outline: 0;
+    background-color: var.$color-primary-95;
+  }
+}
+
+.button--submit {
+  border: 0;
+  font-family: var.$font-main;
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+.form__label {
+  font-weight: 500;
+}
