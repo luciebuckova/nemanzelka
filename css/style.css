@@ -160,6 +160,7 @@ body {
 .image {
   max-width: 100%;
   margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 .container {
