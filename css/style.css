@@ -255,6 +255,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 100%;
   color: hsl(84, 10%, 10%);
+  font-weight: 400;
 }
 .button--submit:hover {
   font-weight: 500;
