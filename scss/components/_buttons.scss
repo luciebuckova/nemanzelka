@@ -15,3 +15,12 @@
     background-color: var.$color-primary-95;
   }
 }
+
+.button--submit {
+  border: 0;
+  font-family: var.$font-main;
+  font-size: 100%;
+  &:hover {
+    font-weight: 500;
+  }
+}

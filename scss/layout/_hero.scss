@@ -1,2 +1,8 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+.hero {
+  background-image: url(/images/background-upper.png);
+  background-size: cover;
+  background-position: right 0 bottom 0;
+}

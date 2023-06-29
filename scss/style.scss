@@ -1,16 +1,18 @@
-@use "abstracts/variables";
 @use "abstracts/mixins";
+@use "abstracts/variables";
 
-@use "base/reset";
 @use "base/base";
+@use "base/reset";
 @use "base/typography";
 
 @use "components/buttons";
+@use "components/card";
 
-@use "layout/navigation";
-@use "layout/hero";
 @use "layout/footer";
 @use "layout/forms";
+@use "layout/hero";
+@use "layout/main";
+@use "layout/navigation";
 
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
 @import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
