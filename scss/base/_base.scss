@@ -6,7 +6,21 @@ body {
 }
 
 .hero,
-.main__section,
+.main__section {
+  padding-top: var.$spacing;
+  padding-right: var.$spacing;
+  padding-bottom: var.$spacing-quadruple;
+  padding-left: var.$spacing;
+  @include mix.tablet {
+    padding-right: var.$spacing-double;
+    padding-left: var.$spacing-double;
+  }
+  @include mix.desktop {
+    padding-right: var.$spacing-quadruple;
+    padding-left: var.$spacing-quadruple;
+  }
+}
+
 .footer {
   padding: var.$spacing;
   @include mix.tablet {
