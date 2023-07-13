@@ -21,10 +21,9 @@ body {
   }
   &--main {
     font-size: 1.25rem;
-    margin-top: var.$spacing;
+    margin-top: var.$spacing-double;
     @include mix.tablet {
       font-size: 2.625rem;
-      margin-top: var.$spacing-double;
     }
     @include mix.desktop {
       font-size: 4rem;
